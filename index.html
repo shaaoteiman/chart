@@ -1,1 +1,43 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /> <title>Memory</title><meta name="description" content="jquery 图表插件" /><script type="text/javascript" src="js/jquery-1.4.2.min.js"></script><script type="text/javascript" src="js/sChart.js"></script><style type="text/css">	body{height:100%}	#divFileChoice{		margin-top: 10px;	}	#choiceFile{		height: 23px;	}	</style></head><body><div id="divMemory">	<canvas id="mycanvas" width="1000" height="400"></canvas>	<div id="divFileChoice">		<input type="file" id="choiceFile" onchange="jsReadFiles(this.files)"/>		<input type="button" value="clear" onclick="clearChart()"/>	</div></div><script type="text/javascript" src="js/operate.js"></script></body></html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /> 
+<link rel="icon" type="image/jpg" href="image/logo.jpg"/> 
+<title>Memory | Chart</title>
+<meta name="description" content="jquery 图表插件" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/sChart.js"></script>
+<style type="text/css">
+ body{
+  height:100%;
+  background-image:url(./image/background.jpg);
+ }
+ #divMemory{
+  width: 1000px;
+  height: 400px;
+  margin:auto;
+ }
+ #divFileChoice{
+  margin-top: 10px;
+ }
+ #choiceFile{
+  height: 23px;
+ }
+ #mycanvas{
+  border-radius:25px;
+ }
+</style>
+</head>
+<body>
+<div id="divMemory">
+ <canvas id="mycanvas" width="1000" height="400"></canvas>
+ <div id="divFileChoice">
+  <input type="file" id="choiceFile" onchange="jsReadFiles(this.files)"/>
+  <input type="button" value="clear" onclick="clearChart()"/>
+ </div>
+</div>
+<script type="text/javascript" src="js/operate.js"></script>
+
+</body>
+</html>
